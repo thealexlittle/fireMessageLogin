@@ -15,7 +15,7 @@ createBtn.addEventListener("click", function(event){
   } else {
     //A BUTTON EVENT NOT A LOGIN EVENT
     createAccount(event);
-  }  
+  }
 });
 
 //Authentication
@@ -32,7 +32,7 @@ function createAccount(event){
       }
       console.log(user);
       user.updateProfile(profile);
-      window.location.href = "messages.html";
+      //window.location.href = "messages.html";
     })
     .catch(function(error){
       alert(error.message);
@@ -43,7 +43,7 @@ function login(event){
   event.preventDefault();
   auth.signInWithEmailAndPassword(email.value, password.value)
     .then(function(event){
-      window.location.href = "messages.html";
+        window.location.href = "messages.html";
     })
     .catch(function(error){
       alert(error.message);
@@ -55,11 +55,10 @@ auth.onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     // ...
-    console.log("Signed in As: "+auth.currentUser.displayName)
+    let message = "Signed in As: "+auth.currentUser.displayName;
+    
   } else {
     // User is signed out.
     // ...
   }
 });
-
-

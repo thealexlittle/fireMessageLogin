@@ -140,7 +140,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--primaryDark);
+    background-color: red;
     color: var(--accent);
 }
 
