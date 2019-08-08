@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Gudea:700');
+@import url('https://fonts.googleapis.com/css?family=Antic&display=swap');
 /* GOOGLE FONTS */
 
 /* font-family: 'Fredericka the Great', cursive; */
@@ -40,7 +40,7 @@ h1,
 h2,
 label,
 button {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Antic', sans-serif;
     font-weight: bold;
 }
 
@@ -56,6 +56,7 @@ h1 {
 }
 
 .allMessages {
+    border-radius: 5px;
     flex: 1;
     margin-top: 15px;
     width: calc(60% + var(--addedPadding)*2);
@@ -80,6 +81,7 @@ h1 {
     margin: 20px 0 40px 0;
     width: 60%;
     border: 2px solid var(--accent);
+    border-radius: 15px;
     background-color: var(--primaryLight);
 }
 
@@ -125,10 +127,11 @@ form {
 }
 
 button {
-    color: var(--primaryDark);
+
     background-color: var(--accent);
     font-size: 1.3em;
-    transition: color 300ms ease-in, background-color 300ms ease-in;
+    border-radius: 5px;
+    box-shadow: none;
     cursor: pointer;
 }
 
@@ -139,6 +142,6 @@ button:hover {
 
 button:focus {
     outline-style: none;
-    outline-width: 2px;
+
     outline-color: var(--primarydark);
 }
