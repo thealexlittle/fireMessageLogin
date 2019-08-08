@@ -34,19 +34,21 @@ body {
 
 header{
     display: inline;
+    color: var(--primaryLight);
 }
 
 h1,
 h2,
 label,
 button {
-    font-family: 'Antic', sans-serif;
+    font-family: 'Gudea', sans-serif;
     font-weight: bold;
 }
 
 input,
 .allMessages>p {
     font-family: 'Gudea', sans-serif;
+    font-weight: bold;
 }
 
 h1 {
