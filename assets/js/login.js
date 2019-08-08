@@ -32,7 +32,7 @@ function createAccount(event){
       }
       console.log(user);
       user.updateProfile(profile);
-      //window.location.href = "messages.html";
+      window.location.href = "messages.html";
     })
     .catch(function(error){
       alert(error.message);
@@ -56,7 +56,7 @@ auth.onAuthStateChanged(function(user) {
     // User is signed in.
     // ...
     let message = "Signed in As: "+auth.currentUser.displayName;
-    
+
   } else {
     // User is signed out.
     // ...
