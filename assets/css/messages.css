@@ -134,6 +134,7 @@ button {
     font-size: 1.3em;
     border-radius: 5px;
     box-shadow: none;
+    transition: color 300ms ease-in, background-color 300ms ease-in;
     cursor: pointer;
 }
 
