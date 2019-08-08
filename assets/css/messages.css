@@ -133,6 +133,7 @@ button {
     background-color: var(--accent);
     font-size: 1.3em;
     border-radius: 5px;
+    border: 0;
     box-shadow: none;
     transition: color 300ms ease-in, background-color 300ms ease-in;
     cursor: pointer;
